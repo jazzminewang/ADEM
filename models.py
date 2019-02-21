@@ -107,7 +107,7 @@ class ADEM(object):
 			x_flat[n_train*i: n_train*(i+1),:] = train_x[:,i,:]
 		pca_train = self.pca.fit_transform(x_flat)
 
-		print 'PCA Variance'
+		print('PCA Variance')
 		print self.pca.explained_variance_ratio_
 		print np.sum(self.pca.explained_variance_ratio_)
 
